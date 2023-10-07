@@ -12,7 +12,26 @@ export default function App() {
   return (
     <NavigationContainer>
       <stack.Navigator>
-        <stack.Screen name="Menu" component={Menu} />
+        <stack.Screen 
+          name="Menu" 
+          component={Menu} 
+          options={{
+            title:"The Harry Potter Quizz",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#f1c40f",
+            },
+            headerTintColor: "#000",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            }
+          }}
+          />
+
+          <stack.Screen
+            name="Siguiente"
+            component=""
+          />
       </stack.Navigator>
     </NavigationContainer>
   );

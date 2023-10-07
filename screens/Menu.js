@@ -2,7 +2,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import Icons from "react-native-vector-icons/MaterialIcons";
 import { StyleSheet } from 'react-native';
 
-import Question from './question';
+import Question from "./question";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -18,7 +18,7 @@ const Menu = () => {
           name="Question"
           component={Question}
           options={{
-            tabBarLabel: 'Tareas',
+            tabBarLabel: 'Menu Principal',
             tabBarIcon: ({ color }) => (
               <Icons name="list" color={color} size={26} />
             ),
@@ -28,3 +28,15 @@ const Menu = () => {
       </Tab.Navigator>
   );
 }
+
+const styles = StyleSheet.create({
+  navigationBar: {
+    backgroundColor: '#fff',
+    shadowOpacity: 0,
+    elevation: 0,
+    borderTopWidth: 1,
+    borderColor: '#95a5a6',
+  },
+})
+
+export default Menu;
