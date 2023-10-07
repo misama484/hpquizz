@@ -1,0 +1,594 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es el nombre completo de Harry Potter?",
+      "opciones": [
+        "Harry James Potter",
+        "Harry Sirius Potter",
+        "Harry Albus Potter",
+        "Harry Severus Potter"
+      ],
+      "respuesta_correcta": "Harry James Potter"
+    },
+    {
+      "pregunta": "¿Cuál es el deporte que se juega con escobas voladoras en el mundo de Harry Potter?",
+      "opciones": [
+        "Quidditch",
+        "Broomstick",
+        "Bludger",
+        "Snitch"
+      ],
+      "respuesta_correcta": "Quidditch"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre completo del director de Hogwarts en los libros de Harry Potter?",
+      "opciones": [
+        "Albus Dumbledore",
+        "Severus Snape",
+        "Rubeus Hagrid",
+        "Minerva McGonagall"
+      ],
+      "respuesta_correcta": "Albus Dumbledore"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la cárcel de magos en el mundo de Harry Potter?",
+      "opciones": [
+        "Azkaban",
+        "Hogwarts",
+        "Diagon Alley",
+        "Gringotts"
+      ],
+      "respuesta_correcta": "Azkaban"
+    },
+    {
+      "pregunta": "¿Quién es el mejor amigo de Harry Potter?",
+      "opciones": [
+        "Ron Weasley",
+        "Draco Malfoy",
+        "Hermione Granger",
+        "Neville Longbottom"
+      ],
+      "respuesta_correcta": "Ron Weasley"
+    },
+    {
+      "pregunta": "¿Cuál es la casa a la que pertenece Luna Lovegood?",
+      "opciones": [
+        "Gryffindor",
+        "Hufflepuff",
+        "Ravenclaw",
+        "Slytherin"
+      ],
+      "respuesta_correcta": "Ravenclaw"
+    },
+    {
+      "pregunta": "¿Cuál es la mascota de Hagrid?",
+      "opciones": [
+        "Búho",
+        "Gato",
+        "Rata",
+        "Perro"
+      ],
+      "respuesta_correcta": "Perro"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del elfo doméstico que sirve a la familia Malfoy?",
+      "opciones": [
+        "Dobby",
+        "Kreacher",
+        "Winky",
+        "Hokey"
+      ],
+      "respuesta_correcta": "Dobby"
+    },
+    {
+      "pregunta": "¿Cuál es el apellido de la familia que es conocida por ser una de las más leales a Voldemort?",
+      "opciones": [
+        "Malfoy",
+        "Lestrange",
+        "Black",
+        "Crouch"
+      ],
+      "respuesta_correcta": "Lestrange"
+    },
+    {
+      "pregunta": "¿Cuál es la asignatura impartida por el profesor Snape en Hogwarts?",
+      "opciones": [
+        "Transformaciones",
+        "Defensa contra las Artes Oscuras",
+        "Pociones",
+        "Adivinación"
+      ],
+      "respuesta_correcta": "Pociones"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la casa de los Weasley?",
+      "opciones": [
+        "The Burrow",
+        "Shell Cottage",
+        "Godric's Hollow",
+        "The Leaky Cauldron"
+      ],
+      "respuesta_correcta": "The Burrow"
+    },
+    {
+      "pregunta": "¿Qué tipo de criatura es Buckbeak?",
+      "opciones": [
+        "Dragón",
+        "Hipogrifo",
+        "Aragog",
+        "Acromántula"
+      ],
+      "respuesta_correcta": "Hipogrifo"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del banco administrado por duendes en el mundo de Harry Potter?",
+      "opciones": [
+        "Gringotts",
+        "Azkaban",
+        "Diagon Alley",
+        "Hogwarts"
+      ],
+      "respuesta_correcta": "Gringotts"
+    },
+    {
+      "pregunta": "¿Cuál es la profesión de los padres de Hermione Granger?",
+      "opciones": [
+        "Auror",
+        "Muggles",
+        "Profesores de Hogwarts",
+        "Dentistas"
+      ],
+      "respuesta_correcta": "Dentistas"
+    },
+    {
+      "pregunta": "¿Cuál es el hechizo utilizado para desarmar a un oponente?",
+      "opciones": [
+        "Avada Kedavra",
+        "Expelliarmus",
+        "Crucio",
+        "Imperio"
+      ],
+      "respuesta_correcta": "Expelliarmus"
+    },
+    {
+      "pregunta": "¿Qué raza de criaturas mágicas es Hagrid?",
+      "opciones": [
+        "Gigante",
+        "Elfo doméstico",
+        "Veela",
+        "Licántropo"
+      ],
+      "respuesta_correcta": "Gigante"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del fantasma que habita en la casa de Ravenclaw en Hogwarts?",
+      "opciones": [
+        "Casi Decapitado Nick",
+        "El Barón Sanguinario",
+        "El Fraile Gordo",
+        "El Fantasma de Helena Ravenclaw"
+      ],
+      "respuesta_correcta": "El Fantasma de Helena Ravenclaw"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del juego de cartas mágicas muy popular en el mundo de Harry Potter?",
+      "opciones": [
+        "Magic: The Gathering",
+        "Gobstones",
+        "Exploding Snap",
+        "Wizarding Duel"
+      ],
+      "respuesta_correcta": "Exploding Snap"
+    },
+    {
+      "pregunta": "¿Cuál es la planta venenosa que tiene un grito mortal?",
+      "opciones": [
+        "Mimbulus Mimbletonia",
+        "Devil's Snare",
+        "Venomous Tentacula",
+        "Whomping Willow"
+      ],
+      "respuesta_correcta": "Devil's Snare"
+    },
+    {
+      "pregunta": "¿Cuál es el objeto que permite a un mago viajar en el tiempo?",
+      "opciones": [
+        "Piedra Resurrección",
+        "Espejo de Oesed",
+        "Capa de Invisibilidad",
+        "Reloj Giratiempo"
+      ],
+      "respuesta_correcta": "Reloj Giratiempo"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo que permite controlar la mente de otra persona?",
+      "opciones": [
+        "Obliviate",
+        "Legilimens",
+        "Imperio",
+        "Crucio"
+      ],
+      "respuesta_correcta": "Imperio"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del elfo doméstico que sirve a la familia Black?",
+      "opciones": [
+        "Dobby",
+        "Kreacher",
+        "Winky",
+        "Hokey"
+      ],
+      "respuesta_correcta": "Kreacher"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del profesor de Defensa Contra las Artes Oscuras en el primer libro?",
+      "opciones": [
+        "Severus Snape",
+        "Remus Lupin",
+        "Gilderoy Lockhart",
+        "Quirinus Quirrell"
+      ],
+      "respuesta_correcta": "Quirinus Quirrell"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la tienda donde los magos compran sus varitas?",
+      "opciones": [
+        "The Leaky Cauldron",
+        "Hogsmeade",
+        "Ollivanders",
+        "Diagon Alley"
+      ],
+      "respuesta_correcta": "Ollivanders"
+    },
+    {
+      "pregunta": "¿Cuál es el apellido de la familia que es conocida por su habilidad para transformarse en animales?",
+      "opciones": [
+        "Potter",
+        "Black",
+        "Malfoy",
+        "Lupin"
+      ],
+      "respuesta_correcta": "Lupin"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la mascota de Neville Longbottom?",
+      "opciones": [
+        "Trevor",
+        "Scabbers",
+        "Hedwig",
+        "Crookshanks"
+      ],
+      "respuesta_correcta": "Trevor"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del elfo doméstico que trabaja en Hogwarts?",
+      "opciones": [
+        "Dobby",
+        "Kreacher",
+        "Winky",
+        "Hokey"
+      ],
+      "respuesta_correcta": "Dobby"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la profesora de Transformaciones en Hogwarts?",
+      "opciones": [
+        "Minerva McGonagall",
+        "Sybill Trelawney",
+        "Pomona Sprout",
+        "Filius Flitwick"
+      ],
+      "respuesta_correcta": "Minerva McGonagall"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la criatura que guarda la entrada a la Cámara de los Secretos?",
+      "opciones": [
+        "Basilisco",
+        "Acromántula",
+        "Dementor",
+        "Hipogrifo"
+      ],
+      "respuesta_correcta": "Basilisco"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la casa de los Black en el mundo de Harry Potter?",
+      "opciones": [
+        "Grimmauld Place",
+        "The Burrow",
+        "Malfoy Manor",
+        "Hogwarts"
+      ],
+      "respuesta_correcta": "Grimmauld Place"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo que permite crear una barrera protectora?",
+      "opciones": [
+        "Expecto Patronum",
+        "Protego",
+        "Wingardium Leviosa",
+        "Accio"
+      ],
+      "respuesta_correcta": "Protego"
+    },
+    {
+      "pregunta": "¿Cuál es el apellido de la familia que es conocida por su lealtad y coraje?",
+      "opciones": [
+        "Weasley",
+        "Malfoy",
+        "Lestrange",
+        "Longbottom"
+      ],
+      "respuesta_correcta": "Weasley"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del objeto que contiene parte del alma de Voldemort?",
+      "opciones": [
+        "Piedra Resurrección",
+        "Varita de Saúco",
+        "Diario de Tom Riddle",
+        "Anillo de la Muerte"
+      ],
+      "respuesta_correcta": "Diario de Tom Riddle"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la profesora de Adivinación en Hogwarts?",
+      "opciones": [
+        "Minerva McGonagall",
+        "Sybill Trelawney",
+        "Pomona Sprout",
+        "Filius Flitwick"
+      ],
+      "respuesta_correcta": "Sybill Trelawney"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la casa de los Malfoy?",
+      "opciones": [
+        "Gryffindor",
+        "Hufflepuff",
+        "Ravenclaw",
+        "Slytherin"
+      ],
+      "respuesta_correcta": "Slytherin"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del elfo doméstico que trabaja en el Ministerio de Magia?",
+      "opciones": [
+        "Dobby",
+        "Kreacher",
+        "Winky",
+        "Hokey"
+      ],
+      "respuesta_correcta": "Winky"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del profesor de Cuidado de Criaturas Mágicas en Hogwarts?",
+      "opciones": [
+        "Remus Lupin",
+        "Rubeus Hagrid",
+        "Gilderoy Lockhart",
+        "Dolores Umbridge"
+      ],
+      "respuesta_correcta": "Rubeus Hagrid"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la casa de los Dursley?",
+      "opciones": [
+        "Privet Drive",
+        "Little Whinging",
+        "Grimmauld Place",
+        "The Burrow"
+      ],
+      "respuesta_correcta": "Privet Drive"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del director de Hogwarts en los primeros libros?",
+      "opciones": [
+        "Albus Dumbledore",
+        "Severus Snape",
+        "Rubeus Hagrid",
+        "Minerva McGonagall"
+      ],
+      "respuesta_correcta": "Albus Dumbledore"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del juego de ajedrez mágico gigante que juegan en el primer libro?",
+      "opciones": [
+        "Wizard Chess",
+        "Gobstones",
+        "Exploding Snap",
+        "Quidditch"
+      ],
+      "respuesta_correcta": "Wizard Chess"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del objeto que concede inmortalidad a quien lo posee?",
+      "opciones": [
+        "Piedra Resurrección",
+        "Varita de Saúco",
+        "Diario de Tom Riddle",
+        "Anillo de la Muerte"
+      ],
+      "respuesta_correcta": "Anillo de la Muerte"
+    },
+    {
+      "pregunta": "¿Cuál es el apellido de la familia que es conocida por su conexión con las artes oscuras?",
+      "opciones": [
+        "Potter",
+        "Black",
+        "Malfoy",
+        "Lupin"
+      ],
+      "respuesta_correcta": "Malfoy"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la mascota de Harry Potter?",
+      "opciones": [
+        "Hedwig",
+        "Crookshanks",
+        "Trevor",
+        "Scabbers"
+      ],
+      "respuesta_correcta": "Hedwig"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la profesora de Herbología en Hogwarts?",
+      "opciones": [
+        "Minerva McGonagall",
+        "Sybill Trelawney",
+        "Pomona Sprout",
+        "Filius Flitwick"
+      ],
+      "respuesta_correcta": "Pomona Sprout"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del profesor de Encantamientos en Hogwarts?",
+      "opciones": [
+        "Remus Lupin",
+        "Rubeus Hagrid",
+        "Gilderoy Lockhart",
+        "Filius Flitwick"
+      ],
+      "respuesta_correcta": "Filius Flitwick"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo utilizado para atraer objetos hacia el mago?",
+      "opciones": [
+        "Avada Kedavra",
+        "Expelliarmus",
+        "Accio",
+        "Lumos"
+      ],
+      "respuesta_correcta": "Accio"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo utilizado para producir luz con la varita?",
+      "opciones": [
+        "Avada Kedavra",
+        "Expelliarmus",
+        "Crucio",
+        "Lumos"
+      ],
+      "respuesta_correcta": "Lumos"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la profesora de Astronomía en Hogwarts?",
+      "opciones": [
+        "Minerva McGonagall",
+        "Sybill Trelawney",
+        "Pomona Sprout",
+        "Aurora Sinistra"
+      ],
+      "respuesta_correcta": "Aurora Sinistra"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del profesor de Historia de la Magia en Hogwarts?",
+      "opciones": [
+        "Remus Lupin",
+        "Rubeus Hagrid",
+        "Gilderoy Lockhart",
+        "Cuthbert Binns"
+      ],
+      "respuesta_correcta": "Cuthbert Binns"
+    },
+    {
+      "pregunta": "¿Cuál es el apellido de la familia que es conocida por su inteligencia y sabiduría?",
+      "opciones": [
+        "Weasley",
+        "Malfoy",
+        "Lestrange",
+        "Ravenclaw"
+      ],
+      "respuesta_correcta": "Ravenclaw"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la casa de los Lovegood en el mundo de Harry Potter?",
+      "opciones": [
+        "Grimmauld Place",
+        "The Burrow",
+        "Malfoy Manor",
+        "Luna House"
+      ],
+      "respuesta_correcta": "Luna House"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo utilizado para revelar recuerdos almacenados en una varita?",
+      "opciones": [
+        "Obliviate",
+        "Legilimens",
+        "Accio",
+        "Priori Incantatem"
+      ],
+      "respuesta_correcta": "Priori Incantatem"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la criatura que es mitad humana y mitad caballo?",
+      "opciones": [
+        "Centaurus",
+        "Hipogrifo",
+        "Centauro",
+        "Acromántula"
+      ],
+      "respuesta_correcta": "Centaurus"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hechizo utilizado para curar heridas?",
+      "opciones": [
+        "Avada Kedavra",
+        "Expecto Patronum",
+        "Episkey",
+        "Crucio"
+      ],
+      "respuesta_correcta": "Episkey"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la mascota de Ron Weasley?",
+      "opciones": [
+        "Hedwig",
+        "Crookshanks",
+        "Trevor",
+        "Scabbers"
+      ],
+      "respuesta_correcta": "Scabbers"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del objeto que permite al mago invocar a su Patronus?",
+      "opciones": [
+        "Varita de Saúco",
+        "Piedra Resurrección",
+        "Capa de Invisibilidad",
+        "Expecto Patronum"
+      ],
+      "respuesta_correcta": "Expecto Patronum"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la mascota de Hermione Granger?",
+      "opciones": [
+        "Hedwig",
+        "Crookshanks",
+        "Trevor",
+        "Scabbers"
+      ],
+      "respuesta_correcta": "Crookshanks"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del objeto que muestra el deseo más profundo de quien lo mira?",
+      "opciones": [
+        "Espejo de Oesed",
+        "Piedra Resurrección",
+        "Varita de Saúco",
+        "Reloj Giratiempo"
+      ],
+      "respuesta_correcta": "Espejo de Oesed"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la profesora de Estudios Muggles en Hogwarts?",
+      "opciones": [
+        "Remus Lupin",
+        "Rubeus Hagrid",
+        "Gilderoy Lockhart",
+        "Charity Burbage"
+      ],
+      "respuesta_correcta": "Charity Burbage"
+    }
+  ]
+}
