@@ -10,7 +10,7 @@ const shuffleArray = array => {
   return newArray.slice(0, 10);
 }*/
 
-
+//TODO En caso de respuesta erronea, mostrar respuesta correcta
 const Question = () => {
   
   
@@ -33,7 +33,7 @@ const Question = () => {
       setCurrentQuestion(random())
       setScore(score + 1)
     } else {
-      Alert.alert('Incorrecto, espabila Muggle!!');
+      Alert.alert("Incorrecto, espabila Muggle!! la respuesta correcta es:" + questions[currentQuestion]?.respuesta_correcta); // TODO formatear
       setCurrentQuestion(random())
       setincorrectScore(incorrectScore + 1)
     }
@@ -42,6 +42,7 @@ const Question = () => {
   //TODO crear contador de preguntas y al llegar a X, finalizar partida
   //TODO crear boton de reinicio de partida
   //TODO crear boton de volver a menu principal
+  //TODO crear comodin 50%, que elimina 2 opciones erroneas y solo se podra usar 2 veces y se suma 1 vez cada 10 aciertos
   
  
 

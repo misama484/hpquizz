@@ -24,11 +24,11 @@ const [personajes, setPersonajes] = useState([]);
 const [searchfeild, setSearchfeild] = useState('');
 
 useEffect(() => {
- fetchPokemons();
+ fetchData();
 },[]);
 
 
-const fetchPokemons = () => {
+const fetchData = () => {
 fetch('https://harry-potter-api.onrender.com/db')
 .then(response => response.json())
 .then(personajes => setPersonajes(personajes));
@@ -39,7 +39,7 @@ fetch('https://harry-potter-api.onrender.com/db')
     <View>
       <ScrollView>
         <View style={styles.container}>
-          {personajes.map((personaje, index) => {
+          {personajes.map((id, index) => {
               return (
                 <TouchableOpacity
                   activeOpacity={0.5}
