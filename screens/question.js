@@ -1,5 +1,6 @@
-import { View, StyleSheet, Text, Button, Alert, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, Alert, TouchableOpacity, ImageBackground } from 'react-native';
 import { useEffect, useState } from 'react';
+import HowartsBG from "../assets/HowartsBG.png"; 
 
 import ArrayPreguntas from "../HP.json"
 
@@ -47,11 +48,14 @@ const Question = () => {
 
   return (
     <View style={styles.container}>
+      <ImageBackground
+        source={HowartsBG}
+        style={{width: '100%', height: '100%'}}
+      >
 
       {/**titulo de la pregunta */}
       <View style = {styles.titleQuestion}>
-        <Text style = { styles.tituloPregunta}>Pregunta: </Text>
-        <Text>{questions[currentQuestion].pregunta}</Text>
+        <Text style = { styles.pregunta}>{questions[currentQuestion].pregunta}</Text>
       </View>
       
 
@@ -68,11 +72,11 @@ const Question = () => {
       </View>
         
         {/**puntuacion */}
-      <View>
-          <Text style = {styles.titleQuestion}>Preguntas acertadas: {score}</Text>
-          <Text style = {styles.titleQuestion}>Preguntas falladas: {incorrectScore}</Text>
+      <View style={styles.answerContainer}>
+          <Text style = {styles.answerCounterText}>Preguntas acertadas: {score}</Text>
+          <Text style = {styles.answerCounterText}>Preguntas falladas: {incorrectScore}</Text>
       </View>
-
+    </ImageBackground>
     </View>
   );
 }
@@ -89,14 +93,39 @@ const styles = StyleSheet.create({
   button:{
     alignItems: "center",
     backgroundColor: "#f1c40f",
+    borderRadius: 5,
     padding: 10,
     width: 300,
     marginTop: 16,
+    borderWidth: 3,
+    borderColor: '#000'
   },
-  tituloPregunta:{
+  pregunta: {
     fontWeight: "bold",
-    color: "#f1c40f",
+    color: "#000",
+    borderWidth: 3,
+    padding: 10,
+    backgroundColor: "#f1c40f",
+    borderRadius: 5,
+  },
+  answerContainer:{
+    flex: 1,
+    flexDirection: 'row',
+    alignContent: "center",
+    justifyContent: 'center',
+    paddingTop: 50,
+    gap: 50,
+  },
+  answerCounterText:{
+    fontWeight: 'bold',
+    borderWidth: 3,
+    height: 40,
+    padding: 10,
+    backgroundColor: "#f1c40f",
+    borderRadius: 5,
+    
   }
+  
 
 })
 

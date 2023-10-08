@@ -1,0 +1,124 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál de los siguientes superhéroes es conocido como el 'Hombre Araña'?",
+      "opciones": ["Iron Man", "Thor", "Spider-Man", "Hulk"],
+      "respuesta_correcta": "Spider-Man"
+    },
+    {
+      "pregunta": "¿Qué metal compone el escudo del Capitán América?",
+      "opciones": ["Platino", "Oro", "Titanio", "Vibranium"],
+      "respuesta_correcta": "Vibranium"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del planeta natal de Thor?",
+      "opciones": ["Asgard", "Midgard", "Vormir", "Sakaar"],
+      "respuesta_correcta": "Asgard"
+    },
+    {
+      "pregunta": "¿Quién es el archienemigo de los X-Men y líder de la Hermandad de Mutantes Malvados?",
+      "opciones": ["Magneto", "Wolverine", "Cíclope", "Jean Grey"],
+      "respuesta_correcta": "Magneto"
+    },
+    {
+      "pregunta": "¿Qué científico se convierte en Hulk cuando se enfurece?",
+      "opciones": ["Reed Richards", "Tony Stark", "Bruce Banner", "Peter Parker"],
+      "respuesta_correcta": "Bruce Banner"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la inteligencia artificial creada por Tony Stark que opera la armadura de Iron Man?",
+      "opciones": ["Jarvis", "Skynet", "Cortana", "Ultron"],
+      "respuesta_correcta": "Jarvis"
+    },
+    {
+      "pregunta": "¿Quién es el líder de los Guardianes de la Galaxia?",
+      "opciones": ["Rocket Raccoon", "Drax el Destructor", "Star-Lord", "Groot"],
+      "respuesta_correcta": "Star-Lord"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la hermana de Black Panther y miembro de la Dora Milaje?",
+      "opciones": ["Nakia", "Shuri", "Okoye", "Ramonda"],
+      "respuesta_correcta": "Shuri"
+    },
+    {
+      "pregunta": "¿Qué gema del infinito es conocida por controlar la mente?",
+      "opciones": ["Gema del Espacio", "Gema del Tiempo", "Gema de la Mente", "Gema del Poder"],
+      "respuesta_correcta": "Gema de la Mente"
+    },
+    {
+      "pregunta": "¿Quién interpretó a Thanos en las películas del Universo Cinematográfico de Marvel?",
+      "opciones": ["Josh Brolin", "Michael Fassbender", "James Spader", "Tom Hiddleston"],
+      "respuesta_correcta": "Josh Brolin"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre real de Deadpool?",
+      "opciones": ["Wade Wilson", "Logan", "Peter Parker", "Scott Summers"],
+      "respuesta_correcta": "Wade Wilson"
+    },
+    {
+      "pregunta": "¿Qué villano robótico es conocido por su frase 'Tengo una cuerda que tirar'?",
+      "opciones": ["Loki", "Ultron", "Red Skull", "Doctor Octopus"],
+      "respuesta_correcta": "Ultron"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del alter ego de Black Widow?",
+      "opciones": ["Natasha Romanoff", "Wanda Maximoff", "Carol Danvers", "Jessica Jones"],
+      "respuesta_correcta": "Natasha Romanoff"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del archienemigo de Daredevil, un abogado ciego?",
+      "opciones": ["Kingpin", "Bullseye", "Punisher", "Elektra"],
+      "respuesta_correcta": "Kingpin"
+    },
+    {
+      "pregunta": "¿Qué villano es el fundador y líder de los Seis Siniestros?",
+      "opciones": ["Venom", "Green Goblin", "Sandman", "Doctor Octopus"],
+      "respuesta_correcta": "Doctor Octopus"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del villano al que Tony Stark vendió armas antes de convertirse en Iron Man?",
+      "opciones": ["Loki", "Mandarín", "Obadiah Stane", "Red Skull"],
+      "respuesta_correcta": "Obadiah Stane"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la inteligencia artificial que ayuda a Tony Stark en sus trajes posteriores a Jarvis?",
+      "opciones": ["H.E.R.B.I.E.", "F.R.I.D.A.Y.", "Siri", "Cortana"],
+      "respuesta_correcta": "F.R.I.D.A.Y."
+    },
+    {
+      "pregunta": "¿Quién es el antagonista principal en 'Pantera Negra'?",
+      "opciones": ["Killmonger", "Klaw", "M'Baku", "Erik Selvig"],
+      "respuesta_correcta": "Killmonger"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la película que marca el inicio del Universo Cinematográfico de Marvel?",
+      "opciones": ["Thor", "Ant-Man", "Iron Man", "The Avengers"],
+      "respuesta_correcta": "Iron Man"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del planeta en el que se encuentra la Gema del Alma en 'Infinity War'?",
+      "opciones": ["Titan", "Sakaar", "Vormir", "Nowhere"],
+      "respuesta_correcta": "Vormir"
+    },
+    {
+      "pregunta": "¿Qué personaje es conocido como 'El Dios del Engaño'?",
+      "opciones": ["Thor", "Loki", "Odín", "Heimdall"],
+      "respuesta_correcta": "Loki"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre de la organización de espionaje y seguridad internacional que Nick Fury dirige?",
+      "opciones": ["S.H.I.E.L.D.", "H.Y.D.R.A.", "A.I.M.", "W.H.I.T.E. D.W.A.R.F."],
+      "respuesta_correcta": "S.H.I.E.L.D."
+    },
+    {
+      "pregunta": "¿Quién es el científico que se convierte en Ant-Man?",
+      "opciones": ["Hank Pym", "Scott Lang", "Janet Van Dyne", "Hope Van Dyne"],
+      "respuesta_correcta": "Scott Lang"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del hermano adoptivo de Thor?",
+      "opciones": ["Loki", "Odín", "Hela", "Frigga"],
+      "respuesta_correcta": "Loki"
+    }
+  ]
+}

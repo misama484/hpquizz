@@ -16,7 +16,7 @@ export default function App() {
           name="Menu" 
           component={Menu} 
           options={{
-            title:"The Harry Potter Quizz",
+            title:"The Friky Quizz",
             headerTitleAlign: "center",
             headerStyle: {
               backgroundColor: "#f1c40f",
