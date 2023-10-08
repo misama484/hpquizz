@@ -3,6 +3,7 @@ import Icons from "react-native-vector-icons/MaterialIcons";
 import { StyleSheet } from 'react-native';
 
 import Question from "./question";
+import Home from"./Home";
 
 const Tab = createMaterialBottomTabNavigator();
 
