@@ -4,6 +4,7 @@ import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Image, Modal, } f
 import { Button, TextInput } from 'react-native-paper';
 import HPLogo from "../assets/logoHP.jpg"
 import CharacterDetails from './CharacterDetails';
+import Hechizos from "../Spells.json";
 
 
 
@@ -25,10 +26,10 @@ fetch(url)
 
 
 const Spells = ({navigation}) => {
-const [spells, setSpells] = useState([]);
+const [spells, setSpells] = useState(Hechizos);
 const [searchfeild, setSearchfeild] = useState('');
 
-
+/*
 useEffect(() => {
  fetchSpells();
 },[]);
@@ -39,6 +40,8 @@ fetch('https://hp-api.onrender.com/api/spells')
 .then(response => response.json())
 .then(spells => setSpells(spells));
 };
+*/
+
 
 
 
@@ -73,7 +76,7 @@ fetch('https://hp-api.onrender.com/api/spells')
             buttonColor = "#f1c40f"
             textColor='#000'
             onPress={() => {
-              fetchSpells();
+              setSpells(Hechizos);
               //TODO borrar campo textField
 
             }}
@@ -86,14 +89,10 @@ fetch('https://hp-api.onrender.com/api/spells')
         <View style={styles.container}>
           {spells.map((spell, index) => {
               return (
-                <TouchableOpacity
-                  activeOpacity={0.5}
-                  key={index}
-                  style={styles.card}                  
-                  >
-                    <Text>{spell.name}</Text>
-                    <Text>{spell.description}</Text>
-                </TouchableOpacity>
+                <View style = {styles.card} key={index}>
+                  <Text style = {{paddingVertical: 10, fontWeight: 'bold', textDecorationLine: 'underline' }}>{spell.name}</Text>
+                  <Text style = {{paddingVertical: 10,}}>{spell.description}</Text>
+                </View>
               );
             })}
         </View>
@@ -110,14 +109,21 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'center',
     marginTop: 30,
+    
   },
   card: {
     display: 'flex',
+    //flexDirection: 'row',
+    alignContent: 'center',
     alignItems: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: 'black',
-    marginHorizontal: 20,
+    borderWidth: 1,
+    borderColor: 'black',
+    borderRadius: 20,
+    marginHorizontal: 60,
     marginVertical: 10,
+    minWidth: 350,
+    backgroundColor: '#f1c40f',
+    
   },
   searchCont: {
     position: 'absolute',
