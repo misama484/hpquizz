@@ -4,11 +4,11 @@ import Icons from "react-native-vector-icons/MaterialIcons";
 import { StyleSheet, Text, View, Image } from 'react-native';
 import HPLogo from "../assets/LogoHP.png";
 
-import Question from "./question";
+import Quizz from "./Quizz";
 import Home from"./Home";
-import Marvel from './Marvel';
-import HpInfo from './HpInfo';
+import Characters from './Characters';
 import CharacterDetails from './CharacterDetails';
+import Spells from "./Spells";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -33,7 +33,7 @@ function Menu(){
 
         <Tab.Screen
           name="Harry Potter"
-          component={Question}
+          component={Quizz}
           options={{
             tabBarLabel: 'Quizz',
             tabBarIcon: ({ color }) => (
@@ -43,10 +43,10 @@ function Menu(){
           />
 
         <Tab.Screen
-          name="Harry Potter Info"
-          component={HpInfo}
+          name="Characters"
+          component={Characters}
           options={{
-            tabBarLabel: 'Info',
+            tabBarLabel: 'Personajes',
             tabBarIcon: ({ color }) => (
               <Icons name="list" color={color} size={26} />
             ),
@@ -54,10 +54,10 @@ function Menu(){
           />
 
           <Tab.Screen
-          name="InfoDetails"
-          component={CharacterDetails}
+          name="Spells"
+          component={Spells}
           options={{
-            tabBarLabel: 'Detalles',
+            tabBarLabel: 'Hechizos',
             tabBarIcon: ({ color }) => (
               <Icons name="list" color={color} size={26} />
             ),

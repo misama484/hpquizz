@@ -11,7 +11,7 @@ const shuffleArray = array => {
 }*/
 
 //TODO En caso de respuesta erronea, mostrar respuesta correcta
-const Question = () => {
+const Quizz = () => {
   
   
   const [score, setScore] = useState(0)
@@ -130,4 +130,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Question
+export default Quizz

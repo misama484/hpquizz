@@ -21,10 +21,10 @@ const Home = ({ navigation }) => {
             >
               <Text style={styles.buttonText}>Quizz</Text> 
           </TouchableOpacity>
-          
+
           <TouchableOpacity
               style={styles.button}
-              onPress={() => navigation.navigate('Harry Potter Info')} 
+              onPress={() => navigation.navigate('Characters')} 
             >
               <Text style={styles.buttonText}>Personajes</Text> 
           </TouchableOpacity>

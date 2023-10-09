@@ -24,7 +24,7 @@ fetch(url)
 */
 
 
-const HpInfo = ({navigation}) => {
+const Characters = ({navigation}) => {
 const [personajes, setPersonajes] = useState([]);
 const [searchfeild, setSearchfeild] = useState('');
 const [ modalVisible, setModalVisible] = useState(false);
@@ -169,4 +169,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HpInfo
+export default Characters;
