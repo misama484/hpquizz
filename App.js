@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Question from './screens/question';
 import Menu from './screens/Menu';
+import Navigation from './screens/Menu';
 
 
 export default function App() {
@@ -10,8 +11,24 @@ export default function App() {
   const stack = createNativeStackNavigator();
     
   return (
-    <NavigationContainer>
-      <stack.Navigator>
+    <Navigation />
+
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+
+/*
+
+<stack.Navigator>
         <stack.Screen 
           name="Menu" 
           component={Menu} 
@@ -27,21 +44,7 @@ export default function App() {
             }
           }}
           />
-
-          <stack.Screen
-            name="Siguiente"
-            component=""
-          />
       </stack.Navigator>
-    </NavigationContainer>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+*/

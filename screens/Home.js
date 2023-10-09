@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import HowartsBG from "../assets/HowartsBG.png";
+import LogoHP from "../assets/LogoHP.png";
 
 
 /*preparar fuente de harry potter*/
@@ -16,16 +17,16 @@ const Home = ({ navigation }) => {
           <View style = {styles.buttonContainer}>
           <TouchableOpacity
               style={styles.button}
-              onPress={() => navigation.navigate('Marvel')} 
-            >
-              <Text style={styles.buttonText}>Marvel</Text> 
-          </TouchableOpacity>
-
-          <TouchableOpacity
-              style={styles.button}
               onPress={() => navigation.navigate('Harry Potter')} 
             >
-              <Text style={styles.buttonText}>Harry Potter</Text> 
+              <Text style={styles.buttonText}>Quizz</Text> 
+          </TouchableOpacity>
+          
+          <TouchableOpacity
+              style={styles.button}
+              onPress={() => navigation.navigate('Harry Potter Info')} 
+            >
+              <Text style={styles.buttonText}>Personajes</Text> 
           </TouchableOpacity>
           </View>
         </ImageBackground>      
@@ -40,8 +41,8 @@ const styles = StyleSheet.create({
      
   },
   header: {
-    height: 100,
-    backgroundColor: '#fff',
+    height: 70,
+    backgroundColor: '#f1c40f',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

@@ -1,15 +1,18 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 import Icons from "react-native-vector-icons/MaterialIcons";
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import HPLogo from "../assets/LogoHP.png";
 
 import Question from "./question";
 import Home from"./Home";
 import Marvel from './Marvel';
 import HpInfo from './HpInfo';
+import CharacterDetails from './CharacterDetails';
 
 const Tab = createMaterialBottomTabNavigator();
 
-const Menu = () => {
+function Menu(){
   return (
     <Tab.Navigator
       tabBarActivateBackgroundColor = '#fff'
@@ -27,22 +30,12 @@ const Menu = () => {
               ),
             }}
           />
-        <Tab.Screen
-          name="Marvel"
-          component={Marvel}
-          options={{
-            tabBarLabel: 'Marvel',
-            tabBarIcon: ({ color }) => (
-              <Icons name="list" color={color} size={26} />
-            ),
-          }}
-          />
 
         <Tab.Screen
           name="Harry Potter"
           component={Question}
           options={{
-            tabBarLabel: 'Harry Potter',
+            tabBarLabel: 'Quizz',
             tabBarIcon: ({ color }) => (
               <Icons name="list" color={color} size={26} />
             ),
@@ -53,12 +46,24 @@ const Menu = () => {
           name="Harry Potter Info"
           component={HpInfo}
           options={{
-            tabBarLabel: 'Harry Potter Info',
+            tabBarLabel: 'Info',
             tabBarIcon: ({ color }) => (
               <Icons name="list" color={color} size={26} />
             ),
           }}
           />
+
+          <Tab.Screen
+          name="InfoDetails"
+          component={CharacterDetails}
+          options={{
+            tabBarLabel: 'Detalles',
+            tabBarIcon: ({ color }) => (
+              <Icons name="list" color={color} size={26} />
+            ),
+          }}
+          />
+
 
       </Tab.Navigator>
   );
@@ -71,6 +76,29 @@ const styles = StyleSheet.create({
     elevation: 0,
 
   },
+  header: {
+    height: 80,
+    backgroundColor: '#f1c40f',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+  },
 })
 
-export default Menu;
+export default function Navigation() {
+  return (
+    <NavigationContainer>
+
+      <View style={styles.header}>
+        <Image
+        source={HPLogo}
+        style={{width:220, height:70,}}
+        />
+      </View>
+
+      <Menu/>
+
+    </NavigationContainer>
+  );
+};

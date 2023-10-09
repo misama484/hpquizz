@@ -1,6 +1,11 @@
 //SCREEN QUE MUESTRA INFO DE HARRY POTTER DESDE UNA API
 import { useState, useEffect } from 'react'
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Image,  } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Image, Modal, } from 'react-native'
+import { Button, TextInput } from 'react-native-paper';
+import HPLogo from "../assets/logoHP.jpg"
+import CharacterDetails from './CharacterDetails';
+
+
 
 //conectamos a la API
 const url = "https://harry-potter-api.onrender.com/db"
@@ -19,42 +24,93 @@ fetch(url)
 */
 
 
-const HpInfo = (props) => {
+const HpInfo = ({navigation}) => {
 const [personajes, setPersonajes] = useState([]);
 const [searchfeild, setSearchfeild] = useState('');
+const [ modalVisible, setModalVisible] = useState(false);
 
 useEffect(() => {
- fetchData();
+ fetchCharacters();
 },[]);
 
 
-const fetchData = () => {
-fetch('https://harry-potter-api.onrender.com/db')
+const fetchCharacters = () => {
+fetch('https://hp-api.onrender.com/api/characters')
 .then(response => response.json())
 .then(personajes => setPersonajes(personajes));
 };
 
+
+
   return(
 
     <View>
-      <ScrollView>
+      {/*Modal con los detalles del personaje */}
+      <Modal
+        animationType='slide'
+        transparent={false}
+        visible={modalVisible}
+        onRequestClose={() => {
+          setModalVisible(!modalVisible);
+        }}>
+          <CharacterDetails name = "Harry Potter" />
+
+    </Modal>
+
+
+
+      <TextInput
+        mode='outlained'
+        placeholder="Buscar Personaje"
+        activeUnderlineColor='#f1c40f'
+        underlineColor='#f1c40f'
+        style={{height: 50, }}
+        onChangeText={(value) => setSearchfeild(value)}
+        >
+      </TextInput>
+      <View style = {{flexDirection: "row", justifyContent: "center", gap: 30, marginTop: 10, }}>
+        <Button
+          icon="account-search-outline"
+          mode='outlined'
+          buttonColor = "#f1c40f"
+          textColor='#000'          
+          onPress={() => {
+            const filterPersonajes = personajes.filter((personaje) => {
+              return personaje.name.toLowerCase().includes(searchfeild.toLowerCase());
+            });
+            setPersonajes(filterPersonajes);
+          }}
+          >Buscar</Button>
+          <Button
+            icon="notification-clear-all"
+            mode='outlined'
+            buttonColor = "#f1c40f"
+            textColor='#000'
+            onPress={() => {
+              fetchCharacters();
+              //TODO borrar campo textField
+
+            }}
+            >Mostrar todos</Button>
+
+      </View>
+     
+        
+      <ScrollView style={{marginTop: 10,}}>
         <View style={styles.container}>
-          {personajes.map((id, index) => {
+          {personajes.map((personaje, index) => {
               return (
                 <TouchableOpacity
                   activeOpacity={0.5}
                   key={index}
                   style={styles.card}
-                  onPress={() =>
-                    props.navigation.navigate('Details')
-                  }>
+                  onPress={() => {setModalVisible(true)}}
+                  >
                   <Image
                     style={{width: 150, height: 150}}
-                    source={{
-                      
-                    }}
+                    src={personaje.image}
                   />
-                  <Text>{pokemon.name}</Text>
+                  <Text>{personaje.name}</Text>
                 </TouchableOpacity>
               );
             })}
@@ -95,6 +151,21 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     width: 250,
     borderRadius: 50,
+  },
+  buttonSearch: {
+    borderRadius: 50,
+    borderWidth: 3,
+    color: "#fff"
+  },
+
+  //estilos de la modal
+  centeredView: {
+    flex: 1,
+    height: 100,
+    width: 100,
+    marginTop: 22,
+    borderWidth: 3,
+    borderColor: '#000'
   },
 });
 
