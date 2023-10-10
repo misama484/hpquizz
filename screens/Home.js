@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import HowartsBG from "../assets/HowartsBG.png";
 import LogoHP from "../assets/LogoHP.png";
+import HPFont from "../assets/fonts/HARRYP__.TTF"
 
 
 /*preparar fuente de harry potter*/
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
     color: '#f1c40f',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: {HPFont},
   },
 });
 
