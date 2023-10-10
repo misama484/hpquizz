@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState }from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import HowartsBG from "../assets/HowartsBG.png";
 import LogoHP from "../assets/LogoHP.png";
-import HPFont from "../assets/fonts/HARRYP__.TTF"
+import * as Font from 'expo-font'; 
+
 
 
 /*preparar fuente de harry potter*/
 
 
 const Home = ({ navigation }) => {
+/*
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+  useEffect(() => {
+    const loadFontsAsync = async () => {
+      await Font.loadAsync({
+        'HarryPotter': require('../assets/fonts/HarryPotter.TTF'),
+      });
+      setFontsLoaded(true);
+    }
+    loadFontsAsync();
+  })
+
+*/
   return (
     <View style={styles.container}>      
         <ImageBackground
@@ -80,7 +94,7 @@ const styles = StyleSheet.create({
     color: '#f1c40f',
     fontSize: 18,
     fontWeight: 'bold',
-    fontFamily: {HPFont},
+    //fontFamily: 'HarryPotter',
   },
 });
 
