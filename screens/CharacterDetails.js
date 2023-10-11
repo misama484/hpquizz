@@ -10,12 +10,14 @@ const CharacterDetails = (props) => {
     
     <ScrollView >
       <View style = {styles.centeredView}>
+        <View style = { styles.imageContainer}>
+          <Image
+            style = {styles.image}
+            source = {props.image}
+          />
+        </View>
         <Text>{props.name}</Text>
-          <Button
-            onPress={() => {setModalVisible(false)}}
-            >
-           Volver
-          </Button>
+          
       </View>
     </ScrollView>
 )}

@@ -107,7 +107,7 @@ fetch('https://hp-api.onrender.com/api/characters')
                   onPress={() => {setModalVisible(true)}}
                   >
                   <Image
-                    style={{width: 150, height: 150}}
+                    style={{width: 150, height: 150, borderRadius: 50,}}
                     src={personaje.image}
                   />
                   <Text>{personaje.name}</Text>
