@@ -17,7 +17,7 @@ function Menu(){
   return (
     <Tab.Navigator
       tabBarActivateBackgroundColor = '#fff'
-      activateColor = '#000'
+      activateColor = '#95a5a6'
       inactiveColor="#95a5a6"
       barStyle={styles.navigationBar}
       >
@@ -90,10 +90,7 @@ const styles = StyleSheet.create({
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <ImageBackground
-        source={HowartsBG}
-        style={{width: '100%', height: '100%'}}
-      >
+
         <View style={styles.header}>
           <Image
           source={HPLogo}
@@ -102,7 +99,7 @@ export default function Navigation() {
         </View>
       
       <Menu/>
-      </ImageBackground>
+
     </NavigationContainer>
   );
 };

@@ -45,20 +45,7 @@ fetch('https://hp-api.onrender.com/api/characters')
   return(
 
     <View>
-      {/*Modal con los detalles del personaje */}
-      <Modal
-        animationType='slide'
-        transparent={false}
-        visible={modalVisible}
-        onRequestClose={() => {
-          setModalVisible(!modalVisible);
-        }}>
-          <CharacterDetails name = "Harry Potter" />
-
-    </Modal>
-
-
-
+      
       <TextInput
         mode='outlained'
         placeholder="Buscar Personaje"
@@ -104,7 +91,11 @@ fetch('https://hp-api.onrender.com/api/characters')
                   activeOpacity={0.5}
                   key={index}
                   style={styles.card}
-                  onPress={() => {setModalVisible(true)}}
+                  onPress={(navigate) => {
+                  
+                      <CharacterDetails name = "Harry Potter"/>
+                   
+                  }}
                   >
                   <Image
                     style={{width: 150, height: 150, borderRadius: 50,}}

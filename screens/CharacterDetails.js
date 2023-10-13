@@ -1,25 +1,30 @@
 import { useState } from 'react';
-import { ScrollView, View, Text, StyleSheet } from "react-native"
+import { ScrollView, View, Text, StyleSheet, Modal } from "react-native"
 import { Button } from "react-native-paper"
+
+
+const [modalVisible, setModalVisible] = useState(False)
 
 const CharacterDetails = (props) => {
 
 
-
+setModalVisible(props.visible)
   return(
-    
+    <Modal
+      animationType="slide"
+      transparent={true}
+      visible={modalVisible}
+      onRequestClose={() => {
+        setModalVisible(False);
+      }}
+      >
     <ScrollView >
       <View style = {styles.centeredView}>
-        <View style = { styles.imageContainer}>
-          <Image
-            style = {styles.image}
-            source = {props.image}
-          />
-        </View>
         <Text>{props.name}</Text>
           
       </View>
     </ScrollView>
+    </Modal>
 )}
 
 

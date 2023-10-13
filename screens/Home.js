@@ -24,11 +24,11 @@ const Home = ({ navigation }) => {
 
 */
   return (
-    <View style={styles.container}>      
-        <ImageBackground
-          source={""}
-          style={{width: '100%', height: '100%'}}
-        >
+    
+    <View style={styles.container}> 
+        
+      <View>
+        <ImageBackground source={HowartsBG} style={{width: '100%', height: '100%'}}>
           <View style = {styles.buttonContainer}>
           <TouchableOpacity
               style={styles.button}
@@ -43,18 +43,27 @@ const Home = ({ navigation }) => {
             >
               <Text style={styles.buttonText}>Personajes</Text> 
           </TouchableOpacity>
+
+          <TouchableOpacity
+              style={styles.button}
+              onPress={() => navigation.navigate('Spells')} 
+            >
+              <Text style={styles.buttonText}>Hechizos</Text> 
+          </TouchableOpacity>
           </View>
-        </ImageBackground>      
+        </ImageBackground>
+      </View>
+          
     </View>
+        
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-     
   },
+
   header: {
     height: 70,
     backgroundColor: '#f1c40f',
@@ -63,21 +72,26 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 20,
   },
+
   title: {
     color: '#fff',
     fontSize: 24,
     fontWeight: 'bold',
     marginRight: 10,
   },
+
   imageLogo:{
     height: 90,
     width: 270,
     padding: 20,
     
   },
+
   buttonContainer:{
-    marginTop: 240,
+    flex: 1,
+    justifyContent:'center',
   },
+
   button: {
     backgroundColor: '#000',
     paddingVertical: 10,
@@ -90,12 +104,14 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: '#f1c40f'
   },
+
   buttonText: {
     color: '#f1c40f',
     fontSize: 18,
     fontWeight: 'bold',
     //fontFamily: 'HarryPotter',
   },
+
 });
 
 export default Home;
