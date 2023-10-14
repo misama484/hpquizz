@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Question from './screens/Quizz';
 import Menu from './screens/Menu';
 import Navigation from './screens/Menu';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function App() {
@@ -11,8 +12,7 @@ export default function App() {
   const stack = createNativeStackNavigator();
     
   return (
-    <Navigation />
-
+      <Navigation />
   );
 }
 

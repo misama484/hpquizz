@@ -23,11 +23,20 @@ fetch(url)
 	.catch((e) => console.log(e))
 */
 
+const openModal = (index) => {
+  setModalVisible(!modalVisible);
+ 
+}
+
 
 const Characters = ({navigation}) => {
 const [personajes, setPersonajes] = useState([]);
 const [searchfeild, setSearchfeild] = useState('');
 const [ modalVisible, setModalVisible] = useState(false);
+
+const [character, setCharacter] = useState({
+
+})
 
 useEffect(() => {
  fetchCharacters();
@@ -86,25 +95,27 @@ fetch('https://hp-api.onrender.com/api/characters')
       <ScrollView style={{marginTop: 10,}}>
         <View style={styles.container}>
           {personajes.map((personaje, index) => {
-              return (
+            
+              return (                
                 <TouchableOpacity
                   activeOpacity={0.5}
                   key={index}
                   style={styles.card}
-                  onPress={(navigate) => {
-                  
-                      <CharacterDetails name = "Harry Potter"/>
-                   
+                  onPress={() => {   
+                     setModalVisible(!modalVisible);
+                     //useState que almacena el personaje sobre el que pulsamos para pasarselo por parametro a CharacterDetails
+                    setCharacter(personaje);
                   }}
-                  >
+                  >                     
                   <Image
                     style={{width: 150, height: 150, borderRadius: 50,}}
                     src={personaje.image}
                   />
                   <Text>{personaje.name}</Text>
-                </TouchableOpacity>
+                </TouchableOpacity>                
               );
             })}
+            <CharacterDetails modalVisible = {modalVisible} setModalVisible={setModalVisible} personaje={character}/>
         </View>
       </ScrollView>
     </View>

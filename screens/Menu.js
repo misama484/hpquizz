@@ -1,7 +1,7 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Icons from "react-native-vector-icons/MaterialIcons";
-import { StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image, ImageBackground, SafeAreaView } from 'react-native';
 import HPLogo from "../assets/LogoHP.png";
 import HowartsBG from '../assets/HowartsBG.png';
 
@@ -64,8 +64,6 @@ function Menu(){
             ),
           }}
           />
-
-
       </Tab.Navigator>
   );
 }
@@ -78,28 +76,30 @@ const styles = StyleSheet.create({
 
   },
   header: {
-    height: 80,
+    height: 140,
     backgroundColor: '#f1c40f',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 20,
+    marginTop: 0,
   },
 })
 
 export default function Navigation() {
   return (
+    
     <NavigationContainer>
 
         <View style={styles.header}>
           <Image
           source={HPLogo}
-          style={{width:220, height:70,}}
+          style={{width:220, height:70, marginTop: 50}}
           />
         </View>
-      
+
       <Menu/>
 
     </NavigationContainer>
+    
   );
 };
