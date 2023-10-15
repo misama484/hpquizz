@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ScrollView, View, Text, StyleSheet, Modal, Image, TouchableOpacity } from "react-native"
 import { Button } from "react-native-paper"
 import HPLogo from "../assets/logoHP.jpg"
@@ -19,14 +19,66 @@ const CharacterDetails = ({
 }) => {
 
   const [casaImage, setCasaImage] = useState()
+  const [student, SetStudent] = useState()
+  const [ wizard, setWizard] = useState()
+  const [ ancestry, setAncestry] = useState()
 
   const selectHouse = (personaje) => {
-    if(personaje.house === "Gryffindor"){
-      console.log(personaje.house)
-      setCasaImage("Gryffindor")
+    if(personaje.house === "Gryffindor"){      
+      setCasaImage(Gryffindor)
     }
-
+    else if(personaje.house === "Slytherin"){
+      setCasaImage(Slytherin)      
+    }
+    else if(personaje.house === "Ravenclaw"){
+      setCasaImage(Ravenclaw)      
+    }
+    else if(personaje.house === "Hufflepuff"){
+      setCasaImage(Hufflepuff)
+    }
   }
+
+  const showStudent = (personaje) => {
+    if(personaje.hogwartsStudent === true){
+      SetStudent("Estudiante")
+    }
+    else if(personaje.hogwartsStaff === true){
+      SetStudent("Profesor")
+    }
+    else{
+      SetStudent("")
+    }
+  }
+
+  const showAncestry = (personaje) => {
+    if(personaje.ancestry === "pure-blood"){
+      setAncestry("Sangre Pura")
+    }
+    else if(personaje.ancestry === "half-blood"){
+      setAncestry("Sangre Mestiza")
+    }
+    else if(personaje.ancestry === "muggleborn"){
+      setAncestry("Muggle")
+    }
+    else{
+      setAncestry("")
+    }
+  }
+  const showWizard = (personaje) => {
+    if(personaje.wizard === true){
+      setWizard("Mago")
+    }
+    else if(personaje.wizard === false){
+      setWizard("")
+    }
+  }
+
+  useEffect(() => {
+    selectHouse(personaje)
+    showStudent(personaje)
+    showAncestry(personaje)
+    showWizard(personaje)
+  })
 
   return(
     <Modal
@@ -40,29 +92,23 @@ const CharacterDetails = ({
     <ScrollView style = {styles.scrollStyle} >
       <View style = {styles.centeredView}>
         <Image
-        style = {{marginTop: 50, width:350, height:450, borderRadius:20}} 
+        style = {{marginTop: 20, width:350, height:450, borderRadius:20}} 
         src={personaje.image}/>
 
         <View style = {styles.card}>
           <Image
-          style = {{width:150, height:200, borderRadius: 20,}} 
-          source={Gryffindor}/>
+          style = {{width:150, height:200, borderRadius: 20}} 
+          source={casaImage}/>
           <View style = {styles.TextContent}>
-            <Text style = {{paddingVertical: 0, fontWeight: 'bold', textDecorationLine: 'underline' }}>Nombre: {personaje.name}</Text>
-            <Text style = {{paddingVertical: 0, fontWeight: 'bold', textDecorationLine: 'underline' }}>F. Nacimiento: {personaje.dateOfBirth }</Text>
-            
-            <Text style = {{paddingVertical: 0, fontWeight: 'bold', textDecorationLine: 'underline' }}>Actor: {personaje.actor }</Text>
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>Nombre: {personaje.name}</Text>
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>{student}</Text>
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>{ancestry}</Text>
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>{wizard}</Text>
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>F. Nacimiento: {personaje.dateOfBirth }</Text>           
+            <Text style = {{paddingVertical: 1, fontWeight: 'bold', }}>Actor: {personaje.actor }</Text>           
           </View>
           
         </View>
-
-        <Text>Nombre: {personaje.name}</Text>
-        <Text>Casa: {personaje.house}</Text>
-        <Text>Fecha de nacimiento: {personaje.dateOfBirth}</Text>
-        <Text>Interpretado: {personaje.actor}</Text>
-        <Text>Mago: {personaje.wizzard ? "No" : "Si"}</Text>
-        <Text>{personaje.hogwartsStudent ? "Estudiante" : ""}</Text>
-        <Text>{personaje.hogwartsStaff ? "Profesor" : ""}</Text>
         <TouchableOpacity
               style={styles.button}
               onPress={() => setModalVisible(!modalVisible)} 
@@ -82,7 +128,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   scrollStyle: {
-    marginTop: 50,
+    marginTop: 100,
+    marginBottom: 90,
     backgroundColor: "#fff",
     padding: 20,
     borderRadius: 20,
@@ -118,14 +165,16 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderRadius: 20,
     marginHorizontal: 60,
-    marginVertical: 10,  
+    marginVertical: 30,  
     minWidth: 350,
-    backgroundColor: '#f1c40f',    
+    backgroundColor: '#f1c40f',
+    padding: 5, 
   },
   TextContent:{
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    //justifyContent: 'center',
+    //alignItems: 'center',
+    paddingHorizontal: 10
   },
 })
 export default CharacterDetails;

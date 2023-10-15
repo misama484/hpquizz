@@ -41,10 +41,13 @@ const Quizz = () => {
 
   //TODO crear contador de preguntas y al llegar a X, finalizar partida
   //TODO crear boton de reinicio de partida
-  //TODO crear boton de volver a menu principal
   //TODO crear comodin 50%, que elimina 2 opciones erroneas y solo se podra usar 2 veces y se suma 1 vez cada 10 aciertos
   
- 
+  //si quito los corchetes, no suma resultados, si los mantengo, no resetea al cargar desde home
+  useEffect(() => {
+    setincorrectScore(0)
+    setScore(0)
+  },[])
 
 
   return (

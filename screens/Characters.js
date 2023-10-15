@@ -108,7 +108,7 @@ fetch('https://hp-api.onrender.com/api/characters')
                   }}
                   >                     
                   <Image
-                    style={{width: 150, height: 150, borderRadius: 50,}}
+                    style={{width: 150, height: 180, borderRadius: 50,}}
                     src={personaje.image}
                   />
                   <Text>{personaje.name}</Text>
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: 'black',
-    marginHorizontal: 20,
+    marginHorizontal: 10,
     marginVertical: 10,
   },
   searchCont: {

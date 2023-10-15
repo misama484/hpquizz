@@ -90,7 +90,7 @@ fetch('https://hp-api.onrender.com/api/spells')
           {spells.map((spell, index) => {
               return (
                 <View style = {styles.card} key={index}>
-                  <Text style = {{paddingVertical: 10, fontWeight: 'bold', textDecorationLine: 'underline' }}>{spell.name}</Text>
+                  <Text style = {{paddingTop: 10, fontWeight: 'bold', textDecorationLine: 'underline' }}>{spell.name}</Text>
                   <Text style = {{paddingVertical: 10,}}>{spell.description}</Text>
                 </View>
               );
@@ -121,8 +121,9 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginHorizontal: 60,
     marginVertical: 10,
-    minWidth: 350,
+    minWidth: 450,
     backgroundColor: '#f1c40f',
+    padding: 10,
     
   },
   searchCont: {
